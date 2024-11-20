@@ -111,7 +111,7 @@ void ODriveSwerve::setState(ODriveAxisState requested_state) {
 }
 
 void ODriveSwerve::setMode(ODriveControlMode requested_mode){
-    Serial.println((String)"Setting contorl MOde to "+requested_mode);
+    
     setParameter("axis0.controller.config.control_mode",String((long)requested_mode));
 }
 
