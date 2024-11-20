@@ -76,6 +76,13 @@ void ODriveSwerve::goTo(float position, float velocity){
 
 }
 
+void ODriveSwerve::rotate(float rot,float velocity){
+
+    float pos = getPosition() + rot;
+    goTo(pos,velocity);
+
+}
+
 ODriveFeedback ODriveSwerve::getFeedback() {
     // Flush RX
     while (serial_.available()) {
