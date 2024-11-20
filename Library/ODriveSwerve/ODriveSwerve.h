@@ -77,8 +77,14 @@ public:
      * Returns pos = 0.0 and vel = 0.0 in case of a communication error.
      */
     ODriveFeedback getFeedback();
-
+    
     /**
+     * @brief Roates n times
+
+     */
+    void rotate(float rot, float velocity);
+    /**
+    
      * @brief Requests the latest position estimate.
      * 
      * Returns 0.0 in case of a communication error.
